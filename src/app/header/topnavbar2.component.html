@@ -1,46 +1,50 @@
-<form class="d-flex">
-    <input class="form" type="search" placeholder="Find a Recipe" aria-label="Search">
-    <button class="btn" type="submit" style="background-color: rgb(255, 100, 0)"><svg class="bi" width="32" height="32" fill="white" style="background-color: rgb(255, 100, 0)">
-        <use xlink:href="/assets/bootstrap-icons.svg#search"/>
-      </svg></button>
-  </form>
-  <nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-light" style="background-color: #f5f6ea;">
   <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Find a Recipe" aria-label="Search">
+      <button class="btn" type="submit" style="background-color: rgb(255, 100, 0)">
+        <svg class="bi" width="32" height="32"
+          fill="white" style="background-color: rgb(255, 100, 0)">
+          <use xlink:href="/assets/bootstrap-icons.svg#search" />
+        </svg>
+      </button> <!-- Adds the button to search using an image from bootstrap -->
+    </form> <!-- Creates the search bar -->
     <a class="navbar-brand" href="#">
       <img src="/assets/AirFryer.jfif" alt="" width="72" class="d-inline-block align-text-bottom">
-      <p>Air Fryer Recipes</p>
-    </a>
+      <p>Air Fryer <div><p>Recipes</div>
+    </a> <!-- Adds the image and text for a button -->
     <a class="navbar-brand" href="#">
       <img src="/assets/Appetizers.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Appetizers and Snacks</p>
-    </a>
+      <p>Appetizers and <div><p>Snacks</p></div>
+    </a> <!-- Adds the image and text for a button -->
     <a class="navbar-brand" href="#">
       <img src="/assets/Breakfast.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Breakfast and Brunch Recipes</p>
-    </a>
-
+      <p>Breakfast and <div><p>Brunch Recipes</p></div>
+    </a> <!-- Adds the image and text for a button -->
     <a class="navbar-brand" href="#">
       <img src="/assets/Chicken.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Chicken Recipes</p>
-    </a>
-
+      <p>Chicken <div><p>Recipes</p></div>
+    </a> <!-- Adds the image and text for a button -->
     <a class="navbar-brand" href="#">
       <img src="/assets/Cookies.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
       <p>Cookies</p>
-    </a>
+    </a> <!-- Adds the image and text for a button -->
     <a class="navbar-brand" href="#">
       <img src="/assets/Dessert.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
       <p>Dessert Recipes</p>
-    </a>
-=
+    </a> <!-- Adds the image and text for a button -->
     <a class="navbar-brand" href="#">
       <img src="/assets/GroundBeef.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Ground Beef Recipes</p>
-    </a>
-
+      <p>Ground Beef <div><p>Recipes</p></div>
+    </a> <!-- Adds the image and text for a button -->
     <a class="navbar-brand" href="#">
       <img src="/assets/InstantPot.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Instant Pot Recipes</p>
-    </a>
+      <p>Instant Pot <div><p>Recipes</p></div>
+    </a> <!-- Adds the image and text for a button -->
+  </div> <!-- ends the container for this nav bar -->
+  <div>
+    <button type="button" class="btn">
+      <p>SEARCH BY INGREDIENT</p>
+    </button> <!-- Adds another button -->
   </div>
-</nav>
+</nav> 
