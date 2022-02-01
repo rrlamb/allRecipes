@@ -1,7 +1,7 @@
 <nav class="navbar navbar-light bg-light" style="background-color: #f5f6ea;">
   <div class="container-fluid">
     <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Find a Recipe" aria-label="Search">
+      <input class="form-control me-2" type="search" placeholder="Find a Recipe" aria-label="Search" size="50">
       <button class="btn" type="submit" style="background-color: #d54215">
         <svg class="bi" width="24" height="24"
           fill="white" style="background-color: #d54215">
@@ -9,42 +9,97 @@
         </svg>
       </button> <!-- Adds the button to search using an image from bootstrap -->
     </form> <!-- Creates the search bar -->
-    <a class="navbar-brand" href="#">
-      <img src="/assets/AirFryer.jfif" alt="" width="72" class="d-inline-block align-text-bottom">
-      <p>Air Fryer <div><p>Recipes</div>
-    </a> <!-- Adds the image and text for a button -->
-    <a class="navbar-brand" href="#">
-      <img src="/assets/Appetizers.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Appetizers and <div><p>Snacks</p></div>
-    </a> <!-- Adds the image and text for a button -->
-    <a class="navbar-brand" href="#">
-      <img src="/assets/Breakfast.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Breakfast and <div><p>Brunch Recipes</p></div>
-    </a> <!-- Adds the image and text for a button -->
-    <a class="navbar-brand" href="#">
-      <img src="/assets/Chicken.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Chicken <div><p>Recipes</p></div>
-    </a> <!-- Adds the image and text for a button -->
-    <a class="navbar-brand" href="#">
-      <img src="/assets/Cookies.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Cookies</p>
-    </a> <!-- Adds the image and text for a button -->
-    <a class="navbar-brand" href="#">
-      <img src="/assets/Dessert.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Dessert Recipes</p>
-    </a> <!-- Adds the image and text for a button -->
-    <a class="navbar-brand" href="#">
-      <img src="/assets/GroundBeef.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Ground Beef <div><p>Recipes</p></div>
-    </a> <!-- Adds the image and text for a button -->
-    <a class="navbar-brand" href="#">
-      <img src="/assets/InstantPot.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
-      <p>Instant Pot <div><p>Recipes</p></div>
-    </a> <!-- Adds the image and text for a button -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item-active">
+          <div class="col-md-12 bg-light text-right">
+            <a class="navbar-brand" href="#">
+              <img src="/assets/AirFryer.jfif" alt="" width="72" class="d-inline-block align-text-bottom">
+              <p>Air Fryer <div><p>Recipes</div>
+            </a> <!-- Adds the image and text for a button -->
+            <a class="navbar-brand" href="#">
+              <img src="/assets/Appetizers.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+              <p>Appetizers and <div><p>Snacks</p></div>
+            </a> <!-- Adds the image and text for a button -->
+            <a class="navbar-brand" href="#">
+              <img src="/assets/Breakfast.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+              <p>Breakfast and <div><p>Brunch Recipes</p></div>
+            </a> <!-- Adds the image and text for a button -->
+            <a class="navbar-brand" href="#">
+              <img src="/assets/Chicken.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+              <p>Chicken <div><p>Recipes</p></div>
+            </a> <!-- Adds the image and text for a button -->
+            <a class="navbar-brand" href="#">
+              <img src="/assets/Cookies.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+              <p>Cookies</p>
+            </a> <!-- Adds the image and text for a button -->
+            <a class="navbar-brand" href="#">
+              <img src="/assets/Dessert.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+              <p>Dessert Recipes</p>
+            </a> <!-- Adds the image and text for a button -->
+            <a class="navbar-brand" href="#">
+              <img src="/assets/GroundBeef.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+              <p>Ground Beef <div><p>Recipes</p></div>
+            </a> <!-- Adds the image and text for a button -->
+            <a class="navbar-brand" href="#">
+              <img src="/assets/InstantPot.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+              <p>Instant Pot <div><p>Recipes</p></div>
+            </a> <!-- Adds the image and text for a button -->
+          </div> <!-- End of column container -->
+        </div> <!-- End of first carousel image -->
+        <div class="carousel-item">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/Cookies.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+            <p>Cookies</p>
+          </a> <!-- Adds the image and text for a button -->
+          <a class="navbar-brand" href="#">
+            <img src="/assets/Dessert.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+            <p>Dessert Recipes</p>
+          </a> <!-- Adds the image and text for a button -->
+          <a class="navbar-brand" href="#">
+            <img src="/assets/GroundBeef.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+            <p>Ground Beef <div><p>Recipes</p></div>
+          </a> <!-- Adds the image and text for a button -->
+          <a class="navbar-brand" href="#">
+            <img src="/assets/InstantPot.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+            <p>Instant Pot <div><p>Recipes</p></div>
+          </a> <!-- Adds the image and text for a button -->
+          <a class="navbar-brand" href="#">
+            <img src="/assets/Main Dish.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+            <p>Instant Pot <div><p>Recipes</p></div>
+          </a> <!-- Adds the image and text for a button -->
+          <a class="navbar-brand" href="#">
+            <img src="/assets/Quick Easy Recipes.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+            <p>Instant Pot <div><p>Recipes</p></div>
+          </a> <!-- Adds the image and text for a button -->
+          <a class="navbar-brand" href="#">
+            <img src="/assets/Slow Cooker.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+            <p>Instant Pot <div><p>Recipes</p></div>
+          </a> <!-- Adds the image and text for a button -->
+          <a class="navbar-brand" href="#">
+            <img src="/assets/Soups Stews Chili.jfif" alt="" width="72" height="72" class="d-inline-block align-text-top">
+            <p>Instant Pot <div><p>Recipes</p></div>
+          </a> <!-- Adds the image and text for a button -->
+        </div> <!-- End of second carousel image -->
+      </div> <!-- End of carousel inner -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button> <!-- Left arrow for carousel -->
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> <!-- Right arrow for carousel -->
+    </div> <!-- End of carousel -->
   </div> <!-- ends the container for this nav bar -->
-  <div>
+  <div> 
     <button type="button" class="btn">
-      <p>SEARCH BY INGREDIENT</p>
+      <p><u>SEARCH BY INGREDIENT</u></p>
     </button> <!-- Adds another button -->
   </div>
 </nav> 
+
+
+    
+    
+   
