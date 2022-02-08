@@ -15,6 +15,6 @@ export class AppComponent {
     for (var recipe of recipelist) {
       console.log(recipe);
       this.recipes.push(recipe);
-    }
+    } 
   }
 }

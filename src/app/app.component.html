@@ -1,12 +1,15 @@
 <ar-topnavbar1>Loading...</ar-topnavbar1>
 <ar-topnavbar2>Loading...</ar-topnavbar2>
+
 <ar-card>Loading...</ar-card>
+
 <div class="container-fluid d-flex">
-<div *ngFor="let recipe of recipes">
-    <ar-recipecard img={{recipe.img}}
-    name={{recipe.name}}
-    description={{recipe.description}}> Loading...</ar-recipecard>
-</div>
+    <div *ngFor="let recipe of recipes">
+        <ar-recipecard img={{recipe.img}}
+        name={{recipe.name}}
+        description={{recipe.description}} 
+        chef={{recipe.chef}}> Loading...</ar-recipecard>
+    </div>
 </div>
 
 <ar-footer>Loading...</ar-footer>
