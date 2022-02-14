@@ -8,13 +8,5 @@ import { recipelist } from './Cards/recipelist.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'allRecipes';
-  recipes: RecipeItemModel [] = [];
-
-  constructor(){
-    for (var recipe of recipelist) {
-      console.log(recipe);
-      this.recipes.push(recipe);
-    } 
-  }
+  
 }

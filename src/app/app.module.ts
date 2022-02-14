@@ -7,6 +7,13 @@ import { RecipeCardComponent } from './Cards/recipeCard.component';
 import { FooterComponent } from './footer/footer.component';
 import { TopNavBarComponent } from './header/topnavbar1.component';
 import { TopNavBarComponent2 } from './header/topnavbar2.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RecipesChickenLayoutComponent } from './Layout/recipes-chicken-layout.component';
+import { HomeLayoutComponent } from './Layout/home-layout.component';
+import { RecipesSnacksLayoutComponent } from './Layout/recipes-snacks-layout.component';
+import { RecipesBreakfastLayoutComponent } from './Layout/recipes-breakfast-layout-component';
+import { RecipesCookiesLayoutComponent } from './Layout/recipes-cookies-layout.component';
+import { RecipesDessertLayoutComponent } from './Layout/recipes-dessert-layout.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +22,17 @@ import { TopNavBarComponent2 } from './header/topnavbar2.component';
     TopNavBarComponent2,
     CardComponent,
     RecipeCardComponent,
-    FooterComponent
+    FooterComponent,
+    RecipesChickenLayoutComponent,
+    HomeLayoutComponent,
+    RecipesSnacksLayoutComponent,
+    RecipesBreakfastLayoutComponent,
+    RecipesCookiesLayoutComponent,
+    RecipesDessertLayoutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
