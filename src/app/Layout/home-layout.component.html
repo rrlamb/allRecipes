@@ -2,11 +2,11 @@
 
 <ar-card>Loading...</ar-card>
 
-<div class="container-fluid d-flex">
-    <div *ngFor="let recipe of recipes">
-        <ar-recipecard img={{recipe.img}}
-        name={{recipe.name}}
-        description={{recipe.description}} 
-        chef={{recipe.chef}}> Loading...</ar-recipecard>
-    </div>
-</div>
+<div class="col-8 d-flex">
+    <div class="row d-flx">
+        <div *ngFor="let recipe of recipes" class="col-4">
+            <ar-recipecard img={{recipe.img}} name={{recipe.name}} description={{recipe.description}}
+                chef={{recipe.chef}}> Loading...</ar-recipecard>
+        </div> <!--End of the loop over the list-->
+    </div> <!--End of the row class-->
+</div><!--End of the columns-->
