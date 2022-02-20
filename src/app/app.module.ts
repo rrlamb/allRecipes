@@ -14,6 +14,10 @@ import { RecipesSnacksLayoutComponent } from './Layout/recipes-snacks-layout.com
 import { RecipesBreakfastLayoutComponent } from './Layout/recipes-breakfast-layout-component';
 import { RecipesCookiesLayoutComponent } from './Layout/recipes-cookies-layout.component';
 import { RecipesDessertLayoutComponent } from './Layout/recipes-dessert-layout.component';
+import { AppetizersAndSnacksComponent } from './store/appetizers-and-snacks/appetizers-and-snacks.component';
+import { BreakfastAndBrunchComponent } from './store/breakfast-and-brunch/breakfast-and-brunch.component';
+import { BreakfastNavBarComponent } from './store/breakfast-and-brunch/breakfastNavbar.component';
+import { AppetizerNavBarComponent } from './store/appetizers-and-snacks/appetizerNavBar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { RecipesDessertLayoutComponent } from './Layout/recipes-dessert-layout.c
     RecipesSnacksLayoutComponent,
     RecipesBreakfastLayoutComponent,
     RecipesCookiesLayoutComponent,
-    RecipesDessertLayoutComponent
+    RecipesDessertLayoutComponent,
+    AppetizersAndSnacksComponent,
+    BreakfastAndBrunchComponent,
+    BreakfastNavBarComponent,
+    AppetizerNavBarComponent
   ],
   imports: [
     BrowserModule,

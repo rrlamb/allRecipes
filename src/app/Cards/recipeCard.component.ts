@@ -19,4 +19,3 @@ export class RecipeCardComponent {
         this.chef = "chef name";
     }
 }
-

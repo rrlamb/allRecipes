@@ -1,1 +1,10 @@
-This is the page for appetizers and snacks
+<ar-appetizerNavbar>Loading...</ar-appetizerNavbar>
+
+<div class="col-8 d-flex">
+    <div class="row d-flx">
+        <div *ngFor="let recipe of appetizer" class="col-4">
+            <ar-breakfast-and-brunch img={{recipe.img}} name={{recipe.name}} description={{recipe.description}}
+                chef={{recipe.chef}}> Loading</ar-breakfast-and-brunch>
+        </div> <!--End of the loop over the list-->
+    </div> <!--End of the row class-->
+</div><!--End of the columns-->
