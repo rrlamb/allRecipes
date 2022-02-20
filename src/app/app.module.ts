@@ -18,6 +18,8 @@ import { AppetizersAndSnacksComponent } from './store/appetizers-and-snacks/appe
 import { BreakfastAndBrunchComponent } from './store/breakfast-and-brunch/breakfast-and-brunch.component';
 import { BreakfastNavBarComponent } from './store/breakfast-and-brunch/breakfastNavbar.component';
 import { AppetizerNavBarComponent } from './store/appetizers-and-snacks/appetizerNavBar.component';
+import { BreakfastCardComponent } from './store/breakfast-and-brunch/breakfastCard.component';
+import { AppCardComponent } from './store/appetizers-and-snacks/appCard.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { AppetizerNavBarComponent } from './store/appetizers-and-snacks/appetize
     AppetizersAndSnacksComponent,
     BreakfastAndBrunchComponent,
     BreakfastNavBarComponent,
-    AppetizerNavBarComponent
+    AppetizerNavBarComponent,
+    BreakfastCardComponent,
+    AppCardComponent
   ],
   imports: [
     BrowserModule,
