@@ -1,0 +1,16 @@
+02/22/2022
+Main features:
+ + Created three components for Breakfast and three for Appetizers
+Added the following attributes to these layout components:
+ + ngFor loop used to create reci[es cards
+  - created list for information 
+  - created model for imformation
+ + Created header card that had a breadcrumb component with in it
+ + Created a navbar with a carousel in it
+Bonus Features:
+Created a total of four componets for each so a total of eight
+ + cards
+ + navbar
+ + carousel
+ + breadcrumb
+
