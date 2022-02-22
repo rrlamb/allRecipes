@@ -1,0 +1,18 @@
+.bd-callout-info {
+    border-left-color: #2ec5b6;
+}
+
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-left-width: .25rem;
+    border-radius: .125rem;
+}
+
+.elementFont__headline {
+    font-size: 36px;
+    line-height: 44px;
+    font: 700 28px/32px "Copper Pot",serif;
+    letter-spacing: 0;
+}
