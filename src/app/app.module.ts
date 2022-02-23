@@ -20,6 +20,8 @@ import { BreakfastNavBarComponent } from './store/breakfast-and-brunch/breakfast
 import { AppetizerNavBarComponent } from './store/appetizers-and-snacks/appetizerNavBar.component';
 import { BreakfastCardComponent } from './store/breakfast-and-brunch/breakfastCard.component';
 import { AppCardComponent } from './store/appetizers-and-snacks/appCard.component';
+import { UserInfoComponent } from './User-info/user-info.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,11 +42,13 @@ import { AppCardComponent } from './store/appetizers-and-snacks/appCard.componen
     BreakfastNavBarComponent,
     AppetizerNavBarComponent,
     BreakfastCardComponent,
-    AppCardComponent
+    AppCardComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
