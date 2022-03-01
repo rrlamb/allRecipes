@@ -14,3 +14,11 @@ Created a total of four componets for each so a total of eight
  + carousel
  + breadcrumb
 
+ 03/1/2022
+ Main features:
+  + Created a backend on firebase
+Added components to github
+ + made user info html, css, ts files
+ + made a user info model
+
+

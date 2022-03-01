@@ -6,8 +6,8 @@ import { UserInfo } from "./user-info.model";
 
 @Component({
     selector: 'ar-user-info',
-    templateUrl: 'user-info.component.html',
-    styleUrls: ['user-info.component.css']
+    templateUrl: './user-info.component.html',
+    styleUrls: ['./user-info.component.css']
 })
 export class UserInfoComponent implements OnInit {
     myInfo: UserInfo | undefined; 
