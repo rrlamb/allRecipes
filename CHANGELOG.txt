@@ -21,4 +21,10 @@ Added components to github
  + made user info html, css, ts files
  + made a user info model
 
+ 03/06/2022
+ Main features:
+  + Created service componets for mock list
+  + Put data into the back (firebase)
+Bounus Features:
+ + Did the above steps for three different mock lists
 

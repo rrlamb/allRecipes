@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { BreakfastRecipeItemModel } from "../store/breakfast-and-brunch/breakfastitem.model";
 import { breakfastlist } from "../store/breakfast-and-brunch/breakfast_list.component";
-
+import { Recipes3Service } from "../store/recipes3.service";
 
 @Component({
     selector: 'ar-recipes-breakfast-layout',
@@ -11,10 +11,16 @@ export class RecipesBreakfastLayoutComponent {
     title = 'allRecipes';
     breakfast: BreakfastRecipeItemModel [] = [];
   
-    constructor(){
-      for (var recipe of breakfastlist) {
-        console.log(recipe);
-        this.breakfast.push(recipe);
-      } 
+    constructor(private recipes3Service:Recipes3Service){
+    }
+      ngOnInit(): void {
+        this.recipes3Service.getRecipes().subscribe(data => {
+          console.log("Fetching recipe data");
+          for (var recipe of data) {
+            console.log(recipe);
+            this.breakfast.push(recipe);
+          }
+        })
+      
     }
 }
