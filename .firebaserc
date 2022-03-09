@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "allrecipes-602f9"
+  },
+  "targets": {
+    "allrecipes-602f9": {
+      "hosting": {
+        "allRecipes": [
+          "allrecipes-602f9"
+        ]
+      }
+    }
+  }
+}

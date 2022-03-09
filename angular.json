@@ -28,7 +28,7 @@
               {
                 "glob": "bootstrap-icons.svg",
                 "input": "./node_modules/bootstrap-icons/",
-                "output": "/assets/" 
+                "output": "/assets/"
               }
             ],
             "styles": [
@@ -45,7 +45,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -105,6 +105,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "allRecipes:build:production",
+            "firebaseProject": "allrecipes-602f9",
+            "firebaseHostingSite": "allrecipes-602f9"
           }
         }
       }
