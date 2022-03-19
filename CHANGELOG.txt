@@ -28,3 +28,11 @@ Added components to github
 Bounus Features:
  + Did the above steps for three different mock lists
 
+03/19/2022
+Main Features:
+ + Modified service component
+   - got rid of HTTP client
+   - used AngularFireDatabase
+ + deployed website
+Bounus Features:
+ + Did the prevous steps for all service componets (therefore implemted this for a total of 3 componets)

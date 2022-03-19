@@ -1,23 +1,21 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { BreakfastRecipeItemModel } from "../store/breakfast-and-brunch/breakfastitem.model";
+import { AngularFireDatabase } from "@angular/fire/compat/database";
 
 @Injectable({
     providedIn: 'root'
 })
 export class Recipes3Service {
-    private baseURL:string = "https://allrecipes-602f9-default-rtdb.firebaseio.com/";
-    private recipesEndpoint:string = "Recipes-breakfast.json" ;
-
-    constructor(private http:HttpClient) {
+    
+    constructor(private db: AngularFireDatabase) {
 
     }
 
     public getRecipes() {
-        return this.http.get<BreakfastRecipeItemModel []>(this.baseURL + this.recipesEndpoint);
+        return this.db.list<BreakfastRecipeItemModel []>("Recipes-breakfast").valueChanges();
     }
 
     public getRecipe(index:number) {
-        return this.http.get<BreakfastRecipeItemModel>(this.baseURL + 'Recipes-general/' + index + '.json');
+        
     }
 }
