@@ -3,7 +3,6 @@ import { RecipeItemModel } from "../Cards/recipeitem.model";
 import { recipelist } from "../Cards/recipelist.component";
 import { RecipesService } from "../store/recipes.service";
 
-
 @Component({
     selector: 'ar-home-layout',
     templateUrl: 'home-layout.component.html'
@@ -13,10 +12,8 @@ export class HomeLayoutComponent implements OnInit{
   recipes: RecipeItemModel [] = [];
 
   constructor(private recipesService:RecipesService){
-    
   }
-
-  ngOnInit(): void {
+    ngOnInit(): void {
     this.recipesService.getRecipes().subscribe(data => {
       console.log("Fetching recipe data");
       for (var recipe of data) {

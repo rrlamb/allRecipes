@@ -12,7 +12,7 @@ export class Recipes2Service {
     }
 
     public getRecipes() {
-        return this.db.list<AppetizerRecipeItemModel []>("Recipes-apps").valueChanges;
+        return this.db.list<AppetizerRecipeItemModel>("Recipes-apps").valueChanges();
     }
 
     public getRecipe(index:number) {

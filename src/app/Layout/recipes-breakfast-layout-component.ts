@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { BreakfastRecipeItemModel } from "../store/breakfast-and-brunch/breakfastitem.model";
 import { breakfastlist } from "../store/breakfast-and-brunch/breakfast_list.component";
 import { Recipes3Service } from "../store/recipes3.service";
@@ -7,7 +7,7 @@ import { Recipes3Service } from "../store/recipes3.service";
     selector: 'ar-recipes-breakfast-layout',
     templateUrl: 'recipes-breakfast-layout.component.html'
 })
-export class RecipesBreakfastLayoutComponent {
+export class RecipesBreakfastLayoutComponent implements OnInit{
     title = 'allRecipes';
     breakfast: BreakfastRecipeItemModel [] = [];
   

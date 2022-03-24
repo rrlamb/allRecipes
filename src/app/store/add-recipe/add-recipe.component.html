@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm" (ngSubmit)="addRecipe(postForm.value)">
+
+                <div class="input-group">
+                    <span class="input-group-text">
+                        Image Path:
+                    </span>
+                    <input tyoe="text" class="form-control" ngModel name="img">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">
+                         Name of recipe:
+                    </span>
+                    <input tyoe="text" class="form-control" ngModel name="name">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">
+                        Description:
+                    </span>
+                    <input tyoe="text" class="form-control" ngModel name="description">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">
+                        Chef name:
+                    </span>
+                    <input tyoe="text" class="form-control" ngModel name="chef">
+                </div>
+
+                <button type="submit" class="btn btn-light">Add recipe</button>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -21,12 +21,14 @@ import { AppetizerNavBarComponent } from './store/appetizers-and-snacks/appetize
 import { BreakfastCardComponent } from './store/breakfast-and-brunch/breakfastCard.component';
 import { AppCardComponent } from './store/appetizers-and-snacks/appCard.component';
 import { UserInfoComponent } from './User-info/user-info.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AddRecipeComponent } from './store/add-recipe/add-recipe.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -48,14 +50,16 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     AppetizerNavBarComponent,
     BreakfastCardComponent,
     AppCardComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    AddRecipeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
     
   ],
   providers: [],

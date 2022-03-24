@@ -18,4 +18,8 @@ export class RecipesService {
     public getRecipe(index:number) {
         
     }
+
+    addRecipe(recipe : RecipeItemModel) {
+        this.db.list<RecipeItemModel>("recipes").push(recipe);
+    }
 }

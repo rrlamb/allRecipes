@@ -8,6 +8,7 @@ import { RecipesSnacksLayoutComponent } from './Layout/recipes-snacks-layout.com
 import { RecipesBreakfastLayoutComponent } from './Layout/recipes-breakfast-layout-component';
 import { RecipesCookiesLayoutComponent } from './Layout/recipes-cookies-layout.component';
 import { RecipesDessertLayoutComponent } from './Layout/recipes-dessert-layout.component';
+import { AddRecipeComponent } from './store/add-recipe/add-recipe.component';
 
 
 const routes:Routes = [
@@ -22,6 +23,10 @@ const routes:Routes = [
   {
     path: 'home', 
     component: HomeLayoutComponent
+  },
+  {
+    path: 'admin', 
+    component: AddRecipeComponent
   },
   {
     path: 'recipes-snacks',
