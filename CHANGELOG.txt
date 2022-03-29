@@ -36,3 +36,9 @@ Main Features:
  + deployed website
 Bounus Features:
  + Did the prevous steps for all service componets (therefore implemted this for a total of 3 componets)
+
+ 03/29/2022
+ Main Features:
+  + added a form for adding more recipe cards
+  + added method to send info to the back end
+  
