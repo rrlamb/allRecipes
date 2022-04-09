@@ -29,6 +29,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddRecipeComponent } from './store/add-recipe/add-recipe.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { FormsModule } from '@angular/forms';
     BreakfastCardComponent,
     AppCardComponent,
     UserInfoComponent,
-    AddRecipeComponent
+    AddRecipeComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,

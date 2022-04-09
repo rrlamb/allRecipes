@@ -9,12 +9,17 @@ import { RecipesBreakfastLayoutComponent } from './Layout/recipes-breakfast-layo
 import { RecipesCookiesLayoutComponent } from './Layout/recipes-cookies-layout.component';
 import { RecipesDessertLayoutComponent } from './Layout/recipes-dessert-layout.component';
 import { AddRecipeComponent } from './store/add-recipe/add-recipe.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 
 const routes:Routes = [
   {
     path: '',
     component: HomeLayoutComponent
+  },
+  {
+    path: 'authentication',
+    component: AuthenticationComponent
   },
   {
     path: 'recipes-chicken', 
