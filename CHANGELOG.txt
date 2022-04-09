@@ -41,4 +41,10 @@ Bounus Features:
  Main Features:
   + added a form for adding more recipe cards
   + added method to send info to the back end
+
+  04/09/2022
+  Main Features:
+  + added authentication
+  + created form to unput user info
+  + connected form to backend
   
